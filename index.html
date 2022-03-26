@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Модальное окно</title>
+</head>
+<body>
+	<!--Ссылка на скрипт. Модальное окно Sweet Alert-->
+
+<button id="button">Нажми на меня</button>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        var button = document.getElementById("button");
+        button.addEventListener('click', function(){
+            swal("Заголовок!", "Текст подсказка!", "success"); 
+            //"success" - значек галочка
+            
+        });
+
+    </script>
+	
+</body>
+</html>
